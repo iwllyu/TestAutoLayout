@@ -19,9 +19,11 @@ class ViewController2: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //Three Images 150x20, 250x20, 350x20
-        iv1.image = UIImage(named: "250x20")
-        iv2.image = UIImage(named: "350x20")
+        iv1.image = UIImage(named: "150x20")
+        iv2.image = UIImage(named: "150x20")
         iv3.image = UIImage(named: "150x20")
+        
+        
         // Do any additional setup after loading the view.
     }
 
@@ -40,5 +42,36 @@ class ViewController2: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    
+    func setImage(pos: Int, newImage: Int) {
+        switch pos {
+        case 0:
+            iv1.image = getImageFromSelection(newImage)
+        case 1:
+            iv2.image = getImageFromSelection(newImage)
+        case 2:
+            iv3.image = getImageFromSelection(newImage)
+        default:
+            break
+        }
+    }
+    
+    func getImageFromSelection(selection: Int) -> UIImage? {
+        switch selection {
+        case 0:
+            return UIImage(named: "150x20")
+        case 1:
+            return UIImage(named: "250x20")
+        case 2:
+            return UIImage(named: "350x20")
+        default:
+            return nil
+        }
+    }
+    
+    @IBAction func newImageSC(sender: UISegmentedControl) {
+        setImage(sender.tag, newImage: sender.selectedSegmentIndex)
+    }
+    
 }
