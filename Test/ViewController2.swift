@@ -19,9 +19,9 @@ class ViewController2: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //Three Images 150x20, 250x20, 350x20
-        iv1.image = UIImage(named: "150x20")
-        iv2.image = UIImage(named: "150x20")
-        iv3.image = UIImage(named: "150x20")
+//        iv1.image = UIImage(named: "150x20")
+//        iv2.image = UIImage(named: "150x20")
+//        iv3.image = UIImage(named: "150x20")
         
         
         // Do any additional setup after loading the view.

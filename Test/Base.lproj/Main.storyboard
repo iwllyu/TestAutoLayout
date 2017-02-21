@@ -73,7 +73,7 @@
                                     <action selector="newImageSC:" destination="uZS-eO-vLk" eventType="valueChanged" id="RAj-DC-7us"/>
                                 </connections>
                             </segmentedControl>
-                            <segmentedControl opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dzO-qG-Foe">
+                            <segmentedControl opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="dzO-qG-Foe">
                                 <rect key="frame" x="87" y="42" width="196" height="29"/>
                                 <segments>
                                     <segment title="150"/>
